@@ -3,4 +3,13 @@
   Number.MAX_VALUE;
  
   Number.MIN_VALUE;
+
+But better way is to validate with
+-Infinity and Infinity
+
+eg:
+1>-Infinity //true
+1<-Infinity //false
+1111>Infinity //false
+1111<Infinity //true
  
