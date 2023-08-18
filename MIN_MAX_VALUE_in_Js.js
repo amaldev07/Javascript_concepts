@@ -1,10 +1,10 @@
- In js the min and max value can be given as 
+ In js, the min and max value can be given as 
    
   Number.MAX_VALUE;
  
   Number.MIN_VALUE;
 
-But better way is to validate with
+But a better way is to validate with
 -Infinity and Infinity
 
 eg:
