@@ -1,1 +1,33 @@
 
+?From call stack, each stack moving to where, in order to execute it in javascript?
+----------------------------------------
+
+In JavaScript, the call stack follows a Last-In-First-Out (LIFO) order, 
+which means that the most recently added function call is the first one to be executed and completed. 
+When a function is called, a new frame for that function is added to the top of the call stack. 
+The interpreter will then execute the code within that function, including any other functions it might call.
+
+Here's a step-by-step explanation of how the call stack works and how the execution moves through the stack:
+
+Function Call:-
+When a function is called, a new frame representing that function is pushed onto the call stack.
+---------------------------------
+Execution of Code:
+The interpreter starts executing the code within the current function's frame, following the order of the code from top to bottom.
+---------------------------------
+Function Calls Within the Function:
+If the function being executed calls another function, a new frame for that function is added to the top of the call stack. The interpreter then begins executing the code within this new function.
+---------------------------------
+Nested Function Calls:
+If the newly called function in step 3 calls another function, another frame is added to the top of the stack, and the interpreter continues to execute the code within this newly called function.
+---------------------------------
+Function Completion:
+When a function's code has been completely executed (including any functions it may have called), its frame is popped off the stack, indicating that the function has completed its execution.
+---------------------------------
+Returning to Previous Function:
+After a function's frame is popped off the stack, the interpreter returns to the previous function in the call stack (the one that called the completed function). The interpreter continues the execution of this function from where it left off.
+
+Repeating the Process:
+Steps 3-6 repeat as necessary, depending on the flow of function calls and the execution of code within those functions.
+
+The call stack manages the order of function execution and ensures that functions are executed in a nested, orderly manner. This process continues until the main script or entry point of the program is completed, and the call stack becomes empty.
