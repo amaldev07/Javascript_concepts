@@ -19,7 +19,8 @@ function p2() {
 async function myAsyncFn() {
     let a = await p1();
     console.log("p1 resolved", new Date())
-    return await p2();
+    await p2();
+    /* return await p2(); */
     console.log("p2 resolved", new Date())
     return 1;
 }
