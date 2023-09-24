@@ -8,7 +8,7 @@ function p1() {
 function p2() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(123);
+            resolve(444);
         }, 1000)
     })
 }
@@ -19,10 +19,11 @@ function p2() {
 async function myAsyncFn() {
     let a = await p1();
     console.log("p1 resolved", new Date())
-    await p2();
+    return await p2();
     console.log("p2 resolved", new Date())
+    return 1;
 }
 
-myAsyncFn().then(() => {
+myAsyncFn().then((x) => {
     debugger
 });
