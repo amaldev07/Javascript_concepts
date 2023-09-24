@@ -2,14 +2,14 @@ function p1() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(123);
-        }, 5000)
+        }, 2000)
     })
 }
 function p2() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(123);
-        }, 5000)
+        }, 1000)
     })
 }
 /* p1().then(()=>{
@@ -23,4 +23,6 @@ async function myAsyncFn() {
     console.log("p2 resolved", new Date())
 }
 
-myAsyncFn();
+myAsyncFn().then(() => {
+    debugger
+});
