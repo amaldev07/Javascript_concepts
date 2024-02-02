@@ -9,7 +9,7 @@ function outerFunction() {
     const innerFunction = () => {
         console.log(this);  // `this` is lexically bound
     };
-    innerFunction();  // Called as an arrow function
+    innerFunction();  // Called as an arrow function 
 }
 
 outerFunction();
