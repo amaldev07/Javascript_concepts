@@ -7,7 +7,12 @@ function completeOrder() {
     return myPromise;
 };
 debugger;
-completeOrder().then(function (data) {
+let promise = completeOrder();
+console.log(promise);
+promise.then(function (data) {
     console.log(data);
     debugger;
 })
+setTimeout(() => {
+    console.log(promise);
+}, 4000)
