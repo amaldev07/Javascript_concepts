@@ -65,22 +65,22 @@ Static methods are typically used for utility functions or operations that donâ€
 Static Methods in ES6 Classes
 The difference between prototype methods and static methods is even clearer in ES6 classes, where static is a specific keyword used to define static methods.
 
-class Person {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
+    class Person {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
 
-    // Prototype method
-    greet() {
-        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
-    }
+        // Prototype method
+        greet() {
+            console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+        }
 
-    // Static method
-    static describe() {
-        console.log("This is a Person class used to create people with name and age.");
+        // Static method
+        static describe() {
+            console.log("This is a Person class used to create people with name and age.");
+        }
     }
-}
 
 // Create an instance of Person
 let person1 = new Person('Alice', 25);
