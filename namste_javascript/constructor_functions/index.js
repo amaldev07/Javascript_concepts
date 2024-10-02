@@ -7,5 +7,5 @@ function Person(name, age) {
 }
 let p1 = new Person("Amal", 30);
 p1.sayHello();
-let p2 = new Person("Divya", 30);
+let p2 = new Person("Dev", 30);
 p2.sayHello();
