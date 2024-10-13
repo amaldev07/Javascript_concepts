@@ -1,12 +1,14 @@
-function b() {
-    // var myVar;
-    debugger;
-    console.log(myVar);
-}
+
 function a() {
-    var myVar = 2;
-    console.log(myVar);
+    debugger;
+    function b() {
+        // var myVar;
+        debugger;
+        console.log(myVar);
+    }
     b();
+    var myVar = 2;
+    // console.log(myVar);
 }
 // var myVar = 1;
 // console.log(myVar);
