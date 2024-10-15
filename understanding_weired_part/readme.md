@@ -1,0 +1,5 @@
+# operators
+
+precidency
+associativity
+coertion
