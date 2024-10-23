@@ -1,4 +1,4 @@
-function myLoop() {
+/* function myLoop() {
     debugger;
     console.log("starting");
     for (var i = 0; i < 5; i++) {
@@ -9,6 +9,15 @@ function myLoop() {
             }, x * 1000)
         }
         xx();
+    }
+} */
+function myLoop() {
+    debugger;
+    console.log("starting");
+    for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+            console.log(i)
+        }, i * 1000)
     }
 }
 myLoop();
