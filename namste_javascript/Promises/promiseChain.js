@@ -20,13 +20,17 @@ let myPromise = promise1();
 myPromise.then(function (data) {
     console.log(data);
     return data;
+    // debugger;
+    // return new Promise((re, rej)=>re(99));
 }).then(function (data) {
     console.log(data);
     debugger;
 })
 
 /* 
-In JavaScript, when you return a value from a .then() block, that value is automatically wrapped in a resolved promise by default. This is why the next .then() gets triggered, even though you're not explicitly returning a promise.
+In JavaScript, when you return a value from a .then() block, 
+that value is automatically wrapped in a resolved promise by default. 
+This is why the next .then() gets triggered, even though you're not explicitly returning a promise.
 
 Here’s how it works:
 
