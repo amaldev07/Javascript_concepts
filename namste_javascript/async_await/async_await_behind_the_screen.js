@@ -16,6 +16,7 @@ function promise2() {
 }
 
 async function myAsyncFun(params) {
+    debugger;
     console.log('Starting...');
     console.log('P1 Starting...');
     let pr1 = await promise1();

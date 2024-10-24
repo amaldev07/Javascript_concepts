@@ -4,7 +4,6 @@ Arrow functions behave differently. this in arrow functions is lexically bound, 
 
 Example:
 javascript
-Copy code
 function outerFunction() {
     const innerFunction = () => {
         console.log(this);  // `this` is lexically bound

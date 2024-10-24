@@ -45,7 +45,6 @@ const person = {
 greet.call(person);  // `this` is explicitly set to `person`
 Example using apply():
 javascript
-Copy code
 greet.apply(person);  // `this` is explicitly set to `person`
 Both call() and apply() allow you to set the value of this explicitly when invoking a function.
 
