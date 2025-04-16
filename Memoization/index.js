@@ -15,7 +15,7 @@ const memoize = (fn) => {
         return result;
     };
 };
-
+let x = memoize;
 const memoizedAdd = memoize(add);
 
 console.log(memoizedAdd(2, 3)); // Calculating... 5
