@@ -5,10 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <script src="../Reference_Sysntax_Type_Error/script.js"></script>
-</body>
+    <div id="grandparent">
+        Grandparent
+        <div id="parent">
+            Parent
+            <div id="child">
+                Child
+            </div>
+        </div>
+    </div>
+    <script>
+        /* 
+            Event Capturing happens from the outermost element to the innermost element.
+            Event Bubbling happens from the innermost element to the outermost element.
+            Change 3rd parameter to true to enable capturing phase
+        */
+        document.querySelector('#grandparent').addEventListener('click', function () {
+            console.log('Grandparent clicked (capturing)');
+        }, false);
+
+        document.querySelector('#parent').addEventListener('click', function () {
+            console.log('Parent clicked (capturing)');
+        }, false);
+
+        document.querySelector('#child').addEventListener('click', function () {
+            console.log('Child clicked (capturing)');
+        }, false);
+    </script>
 
 </html>
