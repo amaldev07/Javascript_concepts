@@ -24,7 +24,7 @@ async function myAsyncFn() {
     console.log("p2 resolved", new Date())
     return 1;
 }
-
+console.log(new Date());
 myAsyncFn().then((x) => {
-    debugger
+    // debugger
 });

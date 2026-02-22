@@ -1,0 +1,1 @@
+$G('Amal', 'Dev', 'es').getFirstName().greet(true);
